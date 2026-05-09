@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+      <!-- Bootstrap 5 via CDN : feuille de style --> 
+<link 
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"rel="stylesheet"> 
+<!-- Votre feuille de style personnelle --> 
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+<div class="container"> 
+<a class="navbar-brand" href="index.html">AfriTalent</a> 
+<button class="navbar-toggler" type="button" 
+data-bs-toggle="collapse" 
+data-bs-target="#navMenu" 
+aria-controls="navMenu" 
+aria-expanded="false" 
+aria-label="Toggle navigation"> 
+<span class="navbar-toggler-icon"></span> 
+</button> 
+<div class="collapse navbar-collapse" id="navMenu"> 
+<ul class="navbar-nav ms-auto"> 
+<li class="nav-item"><a class="nav-link active" 
+href="index.html">Accueil</a></li> 
+<li class="nav-item"><a class="nav-link" 
+href="freelances.html">Freelances</a></li>
+<li class="nav-item"><a class="nav-link" 
+href="tarifs.html">tarifs</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">Apropos</a></li> 
+<li class="nav-item"><a class="nav-link"href="contact.html">contact</a></li>
+</ul>
+<button id="theme-btn" class="btn btn-dark ms-3">Rejoindre AfriTalent</button>
+</div>
+</div>
+</nav>
+<div class="container py-5">
+  <h2 class="text-center mb-4">Contactez-nous</h2>
+  <div class="row">
+    <!--Formulaire-->
+    <div class="col-md-6">
+      <form id="contactForm">
+        <input type="text" id="nom" class="form-control mb-2" placeholder="nom">
+        <small class="error"></small>
+        <input type="text" id="prenom" class="form-control mb-2" placeholder="Prenom">
+        <small class="error"></small>
+        <input type="email" id="email" class="form-control mb-2" placeholder="Email">
+        <small class="error"></small>
+        <select id="sujet" class="form-control mb-2">
+          <option value="">Choisir un Sujet</option>
+          <option>Support</option>
+          <option>Question</option>
+        </select>
+        <small class="error"></small>
+        <textarea id="message" class="form-control mb-2" placeholder="message"></textarea>
+        <small class="error"></small>
+        <button class="btn btn-primary mt-3">Envoyer</button>
+      </form>
+
+    </div>
+    <!--INFOS-->
+    <div class="col-md-6">
+      <h5>Contact</h5>
+      <p>Email: contact@AfricaTalent.com</p>
+      <p>Telephone: + 221 77 000 00 00</p>
+      <p>Adress: Dakar, Senegal</p>
+
+    </div>
+
+  </div>
+
+</div> 
+
+    
+
+
+<script 
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> 
+<!-- Votre script JavaScript --> 
+<script src="js/main.js"></script>
+
+
+
+    
+</body>
+</html>
