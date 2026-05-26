@@ -20,6 +20,7 @@ body{
     background: var(--bg);
     color: var(--text);
     line-height: 1.6;
+    
 }
 h1, h2, h3 {
     font-family: 'Roboto' , sans-serif;
@@ -35,13 +36,39 @@ section{
 /* Navbar */
 .navbar{
     background: var(--white);
-    box-shadow: o 2px 10px rgba(red, green, blue, alpha);
+    box-shadow: 0 2px 10px rgba(red, green, blue, alpha);
 }
 .navbar-nav .nav-link{
     color: var(--text);
     margin-left: 15px;
     transition: 0.3s;
     color: white;
+}
+body{
+    background-color: #0b1d3a;
+    color: #ffffff;
+}
+
+    
+    
+    
+    
+    
+
+ 
+
+
+
+    
+        
+    
+    
+
+    
+
+
+.navbar-toggler-icon{
+    
     
 }
 .navbar-nav .nav-link :hover{
@@ -231,9 +258,139 @@ img{
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
+.freelances{
+    padding: 60px 20px;
+    background: #007BFF;
+}
+.freelances h2{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
 
     
     
+
+
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+.freelance-card{
+    border-radius: 15px;
+    transition: 0.3s;
+    overflow: hidden;
+}
+.freelance-card img{
+    height: 200px;
+    object-fit: cover;
+
+}
+.freelance-card .card-body{
+    text-align: center;
+}
+.freelance-card .job{
+    color: #6b7280;
+    font-size: 14px;
+}
+.freelance-card p{
+    font-size: 14px;
+    color: #374151;
+}
+.freelance-card .btn{
+    border-radius: 20px;
+}
+/* MOBILES */
+@media(max-width: 375px){
+    .freelance-container{
+        grid-template-columns: 1fr;
+    }
+}
+/* TABLETES */
+@media(min-width: 768px){
+    .freelance-container{
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+}
+/* DESKTOP */
+@media(min-width: 1200px){
+    .freelance-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.navbar{
+    padding: 15px;
+}
+.navbar-brand{
+    font-weight: bold;
+}
+.nav-link{
+    transition: 0.3s;
+}
+.nav-link:hover{
+    color: gold;
+}
+.card{
+    transition: 0.3s;
+}
+.card{
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.bento-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.box{
+    background: #6c63ff;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+}
+.error{
+    color: red;
+    font-size: 14px;
+}
+input, textarea, select{
+    border-radius: 10px;
+}
+button{
+    border-radius: 10px;
+}
+.contact{
+    background:  linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("https://Images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop");
+     height: 110vh;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding-top: 80px;
+    text-align: center;
+    align-items: flex-start;
+    
+}
+
+
+    
+
+
+    
+    
+
+
+
+
+
     
     
     

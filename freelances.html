@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freelance</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
     
 
     
     
-     <!-- Bootstrap 5 via CDN : feuille de style --> 
-<link 
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"rel="stylesheet"> 
+ 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/boostrap-icons@1.11.3/font/boostrap-icons.css" rel="stylesheet">
+
 <!-- Votre feuille de style personnelle --> 
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -28,6 +29,8 @@ aria-expanded="false"
 aria-label="Toggle navigation"> 
 <span class="navbar-toggler-icon"></span> 
 </button> 
+ 
+
 <div class="collapse navbar-collapse" id="navMenu"> 
 <ul class="navbar-nav ms-auto"> 
 <li class="nav-item"><a class="nav-link active" 
@@ -54,10 +57,10 @@ href="tarifs.html">tarifs</a></li>
 
      </div>
      <!--Cartes-->
-     <div class="row" id="freelance-liste">
+     <div class="row" id="freelance-container">
           <!--Carte 1-->
-          <div class="col-lg-4 col-md-6 col-12 mb-4 freelance-card" data-category="dev">
-               <div class="cards text-center p-3">
+          <div class="col-12 col-md-6 col-lg-4 freelance-card" data-category="dev">
+               <div class="card text-center p-3">
                     <img src="images/istockphoto-2159641490-612x612.webp" alt="Une fille qui Creer des site moderne">
                     <h5>Mareme Ndiaye</h5>
                     <p>Developpeur Web</p>
@@ -77,8 +80,8 @@ href="tarifs.html">tarifs</a></li>
 
           </div>
           <!--Carte2-->
-          <div class="col-lg-4 col-md-6  col-12 mb-4 freelances-card" data-category="designe">
-               <div class="cards text-center p-3">
+          <div class="col-12 col-md-6 col-lg-4 freelance-card" data-category="designe">
+               <div class="card text-center p-3">
                     <img src="images/istockphoto-664699750-612x612.webp" alt="Une fille qui fait des designe moderne">
                     <h5>Fatou Diop</h5>
                     <p>Design UI</p>
@@ -101,8 +104,8 @@ href="tarifs.html">tarifs</a></li>
 
           </div>
           <!--Caerte 3-->
-          <div class="col-lg-4 col-md-6 col-12 mb-4 freelances-card" data-category="designe">
-               <div class="cards text-center p-3">
+          <div class="col-12 col-md-6 col-lg-4 freelance-card" data-category="designe">
+               <div class="card text-center p-3">
                     <img src="images/photo-1651796704084-a115817945b2.avif" alt="Homme travaillant sur un ordinateur portable dans le marketing digital">
                     <h5>jean fall</h5>
                     <p>Marketing digital</p>
@@ -123,8 +126,8 @@ href="tarifs.html">tarifs</a></li>
                </div>
 
           </div>
-          <div class="col-lg-4 col-md-6 col-12 mb-4 freelances-card" data-category="designe">
-               <div class="cards text-center p-3">
+          <div class="col-12 col-md-6 col-lg-4 freelance-card" data-category="designe">
+               <div class="card text-center p-3">
                     <img src="images/istockphoto-1414921714-612x612.webp" alt="un homme Developper">
                     <h5>Moussa Ba</h5>
                     <p>Developpeur Frontend</p>
@@ -142,8 +145,8 @@ href="tarifs.html">tarifs</a></li>
 
           </div>
 
-   <div class="col-lg-4 col-md-6 col-12 mb-4  freelances-card" data-category="designe">
-               <div class="cards text-center p-3">
+   <div class="col-12 col-md-6 col-lg-4  freelance-card" data-category="designe">
+               <div class="card text-center p-3">
                     <img src="images/istockphoto-1370906922-612x612.webp" alt="Femme graphiste creant un designe sur un ordinateur portable">
                     <h5>Awa sow</h5>
                     <p>Graphiste</p>
@@ -160,8 +163,8 @@ href="tarifs.html">tarifs</a></li>
                      </div>
 
           </div>
-           <div class="col-lg-4 col-md-6 col-12 mb-4 freelances-card" data-category="designe">
-               <div class="cards text-center p-3">
+           <div class=" col-12 col-md-6 col-lg-4freelance-card" data-category="designe">
+               <div class="card text-center p-3">
                     <img src="images/istockphoto-2164312879-612x612.webp" alt="Homme travaillant sur le Referencement SEO dans un ordinateur">
                     <h5>Ibrahima Diallo</h5>
                     <p>SEO Expert</p>
@@ -178,8 +181,8 @@ href="tarifs.html">tarifs</a></li>
                      </div>
 
           </div>
-           <div class="col-lg-4 col-md-6 col-12 mb-4 freelances-card" data-category="designe">
-               <div class="cards text-center p-3">
+           <div class="col-12 col-md-6 col-lg-4 freelance-card" data-category="designe">
+               <div class="card text-center p-3">
                     <img src="images/istockphoto-1690803798-612x612.webp" alt="Developpeur Backend travaillant sur un ordinateur">
                     <h5>Omar Ndiaye</h5>
                     <p>Backend Developper</p>
@@ -195,8 +198,8 @@ href="tarifs.html">tarifs</a></li>
                           <button class="btn btn-primary mt-2">Voir profil</button>
                      </div>
                      </div>
-                     <div class="col-lg-4  col-md-6 col-12 mb-4 freelances-card" data-category="designe">
-               <div class="cards text-center p-3">
+                     <div class="col-12 col-md-6 col-lg-4 freelance-card" data-category="designe">
+               <div class="card text-center p-3">
                     <img src="images/istockphoto-2238588087-612x612.webp" alt="Femme graphiste utilisant utilisant un logiciel de designe">
                     <h5>Khady Fall</h5>
                     <p>UX Designer</p>
@@ -212,8 +215,8 @@ href="tarifs.html">tarifs</a></li>
                           <button class="btn btn-primary mt-2">Voir profil</button>
                      </div>
                      </div>
-                     <div class="col-lg-4 col-md-6 col-12 mb-4 freelances-card" data-category="designe">
-               <div class="cards text-center p-3">
+                     <div class="col-12 col-md-6 col-lg-4 freelance-card" data-category="designe">s
+               <div class="card text-center p-3">
                     <img src="images/istockphoto-1389465862-612x612.webp" alt="Homme gerant des reseau sociaux sur un ordinateur">
                     <h5>Samba Gueuye</h5>
                     <p>Community Manager</p>
@@ -242,9 +245,7 @@ href="tarifs.html">tarifs</a></li>
     
 
 
-<script 
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> 
-<!-- Votre script JavaScript --> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> 
 <script src="js/main.js"></script>
 
 
