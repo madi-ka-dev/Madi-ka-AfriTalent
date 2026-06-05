@@ -1,0 +1,33 @@
+const btn = document.getElementById("theme-btn");
+btn.addEventListener("click", () => {document.body.classList.toggle ("dark-mode")});
+// Sauvegarde
+if(document.body.classList.contains("dark-mode")){
+    localStorage.setItem("theme", "dark");
+} else {
+    localStorage.setItem("theme", "light");
+}
+window.addEventListener("scroll", () =>{
+    const navbar = document.querySelector(".navbar");
+    if (window.scrollY > 50){
+        navbar.classList.add("scrolled");
+    }else{
+        navbar.classList.remove("scrolled");
+    }
+});
+const topBtn = document.getElementById("topBtn");
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 200){
+        topBtn.style.display = "block";
+    } else{
+        topBtn.style.display = "none";
+    }
+}
+);
+topBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth"});
+});
+
+
+
+        
+    
