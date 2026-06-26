@@ -1,11 +1,12 @@
 const btn = document.getElementById("theme-btn");
 btn.addEventListener("click", () => { document.body.classList.toggle("dark-mode") });
-// Sauvegarde
+// Sauvegarde LocalStorage
 if (document.body.classList.contains("dark-mode")) {
     localStorage.setItem("theme", "dark");
 } else {
     localStorage.setItem("theme", "light");
 }
+// Navbar Scroll
 window.addEventListener("scroll", () => {
     const navbar = document.querySelector(".navbar");
     if (window.scrollY > 50) {
@@ -59,7 +60,7 @@ document.querySelectorAll(".counter, .fade-in").forEach(el => {
     observer.observe(el);
 });
 
-// commite 7 
+// Compteur animmés
 const obs = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -70,6 +71,7 @@ const obs = new IntersectionObserver((entries) => {
     });
 }, {
 });
+// Filtrage dynamique
 
 const section = document.querySelectorAll("section");
 
@@ -92,6 +94,7 @@ buttons.forEach(btn => {
         });
     });
 });
+// validation du formulaire
 const form = document.getElementById("contactForm");
 
 form.addEventListener("submit", function(e){
