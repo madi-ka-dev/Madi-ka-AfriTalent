@@ -10,6 +10,7 @@
       <!-- Bootstrap 5 via CDN : feuille de style --> 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
 <link href="https://cdn.jsdelivr.net/npm/boostrap-icons@1.11.3/font/boostrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <!-- Votre feuille de style personnelle --> 
 <link rel="stylesheet" href="css/style.css">
@@ -48,21 +49,21 @@ href="tarifs.html">tarifs</a></li>
     <!--Formulaire-->
     <div class="col-md-6">
       <form id="contactForm">
-        <input type="text" id="nom" class="form-control mb-2" placeholder="nom">
-        <small class="error"></small>
-        <input type="text" id="prenom" class="form-control mb-2" placeholder="Prenom">
-        <small class="error"></small>
+        <input type="text" id="name" class="form-control mb-2" placeholder="Nom">
+        <small id="nameError"></small>
+        
         <input type="email" id="email" class="form-control mb-2" placeholder="Email">
-        <small class="error"></small>
+        <small id="emailError"></small>
         <select id="sujet" class="form-control mb-2">
           <option value="">Choisir un Sujet</option>
           <option>Support</option>
           <option>Question</option>
         </select>
-        <small class="error"></small>
-        <textarea id="message" class="form-control mb-2" placeholder="message"></textarea>
-        <small class="error"></small>
-        <button class="btn btn-primary mt-3">Envoyer</button>
+        <small id="sujetError"></small>
+        <textarea id="message" class="form-control mb-2" placeholder="Message"></textarea>
+        <small id="messageError"></small>
+       <button type="submit">Emvoyer</button>
+        <p id="succesMessage"></p>
       </form>
 
     </div>
@@ -72,6 +73,7 @@ href="tarifs.html">tarifs</a></li>
       <p>Email: contact@AfricaTalent.com</p>
       <p>Telephone: + 221 77 000 00 00</p>
       <p>Adress: Dakar, Senegal</p>
+      
 
     </div>
 

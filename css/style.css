@@ -44,6 +44,13 @@ section{
     transition: 0.3s;
     color: white;
 }
+form{
+    position: relative;
+    z-index: 9999;
+}
+button{
+    background: red;
+}
 
 
     
@@ -377,9 +384,12 @@ button{
     background-size: cover;
     background-position: center;
     color: #fff;
-    padding-top: 80px;
+    padding-top: 10px;
     text-align: center;
     align-items: flex-start;
+    
+    
+    
     
 }
 .dark-mode{

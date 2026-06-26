@@ -76,3 +76,68 @@ const section = document.querySelectorAll("section");
 for (let sect of section){
     obs.observe(sect);
 }
+const buttons = document.querySelectorAll(".filter-btn");
+const cards = document.querySelectorAll(".freelance-card");
+
+buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+        const category = btn.getAttribute ("data-category");
+
+        cards.forEach(card => {
+            if (category === "all" || card.getAttribute("data-category")=== category){
+                card.style.display = "block";
+            } else{
+                card.style.display = "none";
+            }
+        });
+    });
+});
+const form = document.getElementById("contactForm");
+
+form.addEventListener("submit", function(e){
+    e.preventDefault();
+    let isValid = true
+    const name = document.getElementById("name").value.trim();
+    if (isValid){
+        console.log("FORMULAIRE OK")
+        document.getElementById("sucessMessage").textContent = "Message envoyer avec succes";
+        form.reset();
+    }
+     
+    
+
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+    // reset erreurs
+    document.getElementById("nameError").textContent="";
+     
+    document.getElementById("emailError").textContent="";
+    document.getElementById("messageError").textContent="";
+    document.getElementById("sujetError").textContent="";
+    // Nom
+    if (name===""){
+        document.getElementById("nameError").textContent= "Nom obligatoire";
+        isValid = false;
+    }
+    
+    //Email (regex simple)
+   if (!email.includes("@")){
+    document.getElementById("emailError").textContent = "Email invalide";
+    isValid = false;
+   }
+    // Message
+   if (message.lenght < 5){
+    document.getElementById("messageError").textContent = "Minimum 5 caracteres";
+    isValid = false;
+   }
+   // succes
+   if (isValid){
+    document.getElementById("succesMessage").textContent = "Message envoyer avec succes";
+    form.reset();
+   }
+   
+       
+   
+});
+
+
